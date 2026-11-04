@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Macaco Artificial | Do Fogo ao Prompt</title>
+  
   <style>
     body { margin: 0; background: #10141c; color: #fff;
            font-family: Arial, sans-serif; text-align: center; }
@@ -23,6 +24,31 @@
     main { padding: 35px 20px; }
     h1 { color: #ff9234; }
     a { color: #79b8ff; }
+  .projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto 0;
+}
+.cartao {
+  background: #1a2030;
+  border: 1px solid #2a3350;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+.cartao h3 { margin: 0 0 8px; color: #ff9234; }
+.cartao p { margin: 0 0 16px; color: #c8d0e0; }
+.cartao a {
+  display: inline-block;
+  background: #79b8ff;
+  color: #10141c;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
   </style>
 </head>
 <body>
@@ -35,8 +61,18 @@
     <p>Do Fogo ao Prompt</p>
     <p>Ferramentas, experimentos e projetos desenvolvidos com inteligência artificial.</p>
     <h2>Projetos</h2>
-    <p><a href="https://github.com/igorjobim/digitalizacao-moldes">MoldeDigital</a></p>
-    <p><a href="https://github.com/igorjobim/MatrixClock">MatrixClock</a></p>
+    <div class="projetos">
+  <div class="cartao">
+    <h3>MoldeDigital</h3>
+    <p>Digitaliza moldes a partir de foto e gera vetor para CAD.</p>
+    <a href="https://github.com/igorjobim/digitalizacao-moldes">Ver no GitHub</a>
+  </div>
+  <div class="cartao">
+    <h3>MatrixClock</h3>
+    <p>[descreva em uma linha]</p>
+    <a href="https://github.com/igorjobim/MatrixClock">Ver no GitHub</a>
+  </div>
+</div>
   </main>
 </body>
 </html>

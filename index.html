@@ -14,13 +14,6 @@
   width: 100%;
   height: auto;          /* a altura passa a seguir a proporção da imagem */
 }
-@media (max-width: 800px) {
-  header img {
-    height: 200px;       /* no celular, altura fixa para o banner não ficar minúsculo */
-    object-fit: cover;   /* corta as laterais, não o topo e a base */
-    object-position: center;
-  }
-}
     main { padding: 35px 20px; }
     h1 { color: #ff9234; }
     a { color: #79b8ff; }
@@ -52,10 +45,12 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="bannerV5.png"
-         alt="Macaco Artificial">
-  </header>
+ <header>
+  <picture>
+    <source media="(max-width: 800px)" srcset="banner-mobile.png">
+    <img src="bannerV5.png" alt="Macaco Artificial">
+  </picture>
+</header>
   <main>
     <h2>Projetos</h2>
     <div class="projetos">
